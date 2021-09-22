@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\thsr_ticket",
-    "\\thsr_ticket\\remote"
+    "\\thsr_ticket\\ml",
+    "\\thsr_ticket\\model",
+    "\\thsr_ticket\\model\\web",
+    "\\thsr_ticket\\model\\web\\booking_form"
   ],
-  "SelectedNode": "\\thsr_ticket\\main.py",
+  "SelectedNode": "\\thsr_ticket\\model\\web",
   "PreviewInSolutionExplorer": false
 }

@@ -126,15 +126,21 @@ class BookingFlow:
             self.confirm_ticket.phone = self.confirm_ticket_info.phone_info()
 
     def input_security_code(self) -> str:
+        from thsr_ticket.Resnet import captcha_code
         print("等待驗證碼...")
         book_page = self.client.request_booking_page()
         img_resp = self.client.request_security_code_img(book_page.content)
         image = Image.open(io.BytesIO(img_resp.content))
         print("輸入驗證碼:")
-        img_arr = np.array(image)
-        plt.imshow(img_arr)
-        plt.show()
-        return input()
+        
+#         img_arr = np.array(image)
+        
+#         plt.imshow(img_arr)
+#         plt.show()
+#         return input()
+        out = captcha_code.get_captcha_code(image)
+        print(out)
+        return out
 
     def show_error(self, html: bytes) -> bool:
         errors = self.error_feedback.parse(html)
