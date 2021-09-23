@@ -1,5 +1,8 @@
 # 高鐵訂票小幫手
 
+本程式由python主要參考https://github.com/BreezeWhite/THSR-Ticket
+另加入resnet18 作為辨識驗證碼
+
 
 
 ![](https://github.com/BreezeWhite/THSR-Ticket/workflows/build/badge.svg)
