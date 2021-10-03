@@ -27,9 +27,9 @@ def test_get_params():
     expected = {
         "BookingS3FormSP:hf:0": "",
         "diffOver": 1,
-        "idInputRadio": "radio36",
+        "idInputRadio": "radio41",
         "idInputRadio:idNumber": "A186902624",
-        "eaiPhoneCon:phoneInputRadio": "radio43",
+        "eaiPhoneCon:phoneInputRadio": "radio48",
         "eaiPhoneCon:phoneInputRadio:mobilePhone": "0945789123",
         "email": "",
         "agree": "on",
