@@ -3,7 +3,7 @@ test.py
 .mypy_cache/
 .pytest_cache/
 .db/
-.venv/
+Ticket_env
 
 *.png
 thsr_workspace.code-workspace

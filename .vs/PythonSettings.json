@@ -1,4 +1,4 @@
 {
   "TestFramework": "Pytest",
-  "Interpreter": "Workspace|Workspace|env"
+  "Interpreter": "Ticket_env\\Scripts\\python.exe"
 }

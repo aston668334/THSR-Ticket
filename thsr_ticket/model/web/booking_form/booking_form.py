@@ -34,7 +34,7 @@ class BookingForm(AbstractParams):
         self._outbound_time: str = None  # Required
         self._inbound_date: str = ""
         self._inbound_time: str = ""
-        self._adult_ticket_num: str = "1F"
+        self._adult_ticket_num: str = "0F"
         self._child_ticket_num: str = "0H"
         self._disabled_ticket_num: str = "0W"
         self._elder_ticket_num: str = "0E"

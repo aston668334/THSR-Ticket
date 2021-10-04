@@ -33,8 +33,6 @@ class BookingFormInfo:
         return None
 
 
-
-
     def ticket_num_info(self, ticket_type: str, default_value: int = 0, select: bool = True) -> int:
         max_num = len(BaseTicket()) - 1
         print("選擇{}票數 ({}~{}) (預設: {}): ".format(ticket_type, 0, max_num, default_value))

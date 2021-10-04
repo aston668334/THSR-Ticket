@@ -2,11 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\thsr_ticket",
-    "\\thsr_ticket\\ml",
+    "\\thsr_ticket\\configs",
+    "\\thsr_ticket\\configs\\web",
     "\\thsr_ticket\\model",
     "\\thsr_ticket\\model\\web",
-    "\\thsr_ticket\\model\\web\\booking_form"
+    "\\thsr_ticket\\model\\web\\booking_form",
+    "\\thsr_ticket\\remote",
+    "\\thsr_ticket\\view",
+    "\\thsr_ticket\\view\\web",
+    "\\thsr_ticket\\view_model"
   ],
-  "SelectedNode": "\\thsr_ticket\\model\\web",
+  "SelectedNode": "\\thsr_ticket\\configs\\web\\http_config.py",
   "PreviewInSolutionExplorer": false
 }

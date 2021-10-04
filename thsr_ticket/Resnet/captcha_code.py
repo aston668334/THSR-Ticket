@@ -32,9 +32,7 @@ import torchvision.transforms as trns
 from scipy.io import loadmat
 from torch.utils.data import DataLoader
 from torch.utils.data.dataset import Dataset
-
-
-from tqdm import tqdm 
+ 
 
 
 # In[8]:
@@ -130,9 +128,9 @@ def test(img ,model, device):
 
 
 
-class MyAlexNet(nn.Module):
+class Resnet(nn.Module):
   def __init__(self):
-    super(MyAlexNet, self).__init__()
+    super(Resnet, self).__init__()
     
     pretrained = torchvision.models.resnet18(pretrained=False)
     num = pretrained.fc.in_features
@@ -160,10 +158,10 @@ class MyAlexNet(nn.Module):
     return digit1, digit2, digit3, digit4
 
 
-def get_captcha_code(image):
+def get_captcha_code(image,model):
     device = torch.device("cpu")
     model_path  = './thsr_ticket/Resnet/Resnet.pth'
-    model = MyAlexNet() 
+    #model = Resnet() 
     model.load_state_dict(torch.load(model_path, map_location = device))
 #     model = torch.load(model_path, map_location = device)
 #     print(model)
