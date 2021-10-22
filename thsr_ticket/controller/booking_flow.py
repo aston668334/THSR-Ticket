@@ -63,6 +63,7 @@ class BookingFlow:
             return result
 
         # Second page. Train confirmation
+        print(result.content)
         avail_trains = AvailTrains().parse(result.content)
         sel = self.show_avail_trains.show(avail_trains)
         value = avail_trains[sel-1].form_value  # Selection from UI count from 1
